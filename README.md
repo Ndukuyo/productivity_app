@@ -17,3 +17,15 @@ Perfect for journaling apps, note-taking applications, or any personal tracking 
 - User data isolation (users can only access their own entries)
 - Mood tracking for entries
 
+## Setup and Installation
+
+1. Install dependancies
+pipenv install -r requirements.txt
+
+2. Initialize database:
+    -flask db init
+    -flask db migrate -m "message"
+    -flask db upgrade head 
+
+3. Run the app
+    python app.py
